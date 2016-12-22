@@ -1,7 +1,7 @@
 # pde_numerics
-Spectral/pseudospectral PDE solvers, degenerate Schrodinger equation wavefront analysis
+Spectral/pseudospectral PDE solvers, degenerate Schrödinger equation wavefront analysis
 
-These MATLAB functions are intended for numerical simulation of PDEs in one space dimension, with emphasis placed on a degenerate nonlinear Schrodinger equation.  The PDEs are solved spectrally (or pseudospectrally in the case of nonlinear PDE).
+These MATLAB functions are intended for numerical simulation of PDEs in one space dimension, with emphasis placed on a degenerate nonlinear Schrödinger equation.  The PDEs are solved spectrally (or pseudospectrally in the case of nonlinear PDE).
 
 The main script is DNLS.m.  This script calls other functions as needed, and each function call is in its own code section.  The first section of DNLS.m initializes many of the necessary variables and should always be run first.  Following that, the sections up to and including the function call PlayMovie.m are intended to be run sequentially.  After this, each function call requires multiple simulations of the PDE, and thus these functions may be called after only running the variable initialization section of DNLS.m.
 
